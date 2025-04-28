@@ -1,0 +1,470 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net6</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<RootNamespace>KLINE</RootNamespace>
+		<LangVersion>preview</LangVersion>
+		<IsPackable>false</IsPackable>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+		<NeutralLanguage>en-US</NeutralLanguage>
+		<AssemblyName>KLINE</AssemblyName>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="MelonLoader" Private="false">
+			<HintPath>d:\Games\Schedule I\MelonLoader\net6\MelonLoader.dll</HintPath>
+		</Reference>
+		<Reference Include="0Harmony" Private="false">
+			<HintPath>d:\Games\Schedule I\MelonLoader\net6\0Harmony.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppInterop.Runtime" Private="false">
+			<HintPath>d:\Games\Schedule I\MelonLoader\net6\Il2CppInterop.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppInterop.Common" Private="false">
+			<HintPath>d:\Games\Schedule I\MelonLoader\net6\Il2CppInterop.Common.dll</HintPath>
+		</Reference>
+		<Reference Include="Assembly-CSharp-firstpass" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+		</Reference>
+		<Reference Include="AeLa.EasyFeedback" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\AeLa.EasyFeedback.dll</HintPath>
+		</Reference>
+		<Reference Include="AeLa.EasyFeedback.InputSystemSupport" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\AeLa.EasyFeedback.InputSystemSupport.dll</HintPath>
+		</Reference>
+		<Reference Include="AmplifyImpostors" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\AmplifyImpostors.dll</HintPath>
+		</Reference>
+		<Reference Include="AmplifyImpostors.Runtime" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\AmplifyImpostors.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="AstarPathfindingProject" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\AstarPathfindingProject.dll</HintPath>
+		</Reference>
+		<Reference Include="Boxophobic.AtmosphericHeightFog.Runtime" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Boxophobic.AtmosphericHeightFog.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Boxophobic.Utils.Scripts" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Boxophobic.Utils.Scripts.dll</HintPath>
+		</Reference>
+		<Reference Include="Cinemachine" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Cinemachine.dll</HintPath>
+		</Reference>
+		<Reference Include="com.rlabrecque.steamworks.net" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\com.rlabrecque.steamworks.net.dll</HintPath>
+		</Reference>
+		<Reference Include="CorgiGodRays" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\CorgiGodRays.dll</HintPath>
+		</Reference>
+		<Reference Include="EasyButtons" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\EasyButtons.dll</HintPath>
+		</Reference>
+		<Reference Include="Edgegap" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Edgegap.dll</HintPath>
+		</Reference>
+		<Reference Include="FishNet.Demos" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\FishNet.Demos.dll</HintPath>
+		</Reference>
+		<Reference Include="FishNet.Runtime" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\FishNet.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="GameKit.Dependencies" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\GameKit.Dependencies.dll</HintPath>
+		</Reference>
+		<Reference Include="GameKit.Utilities" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\GameKit.Utilities.dll</HintPath>
+		</Reference>
+		<Reference Include="HBAO.Demo.Runtime" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\HBAO.Demo.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="HBAO.Demo.Universal.Runtime" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\HBAO.Demo.Universal.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="HBAO.Runtime" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\HBAO.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="HBAO.Universal.Runtime" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\HBAO.Universal.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="HSVPicker" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\HSVPicker.dll</HintPath>
+		</Reference>
+		<Reference Include="LokoSolo.PinchableScrollRect" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\LokoSolo.PinchableScrollRect.dll</HintPath>
+		</Reference>
+		<Reference Include="Mono.Security" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Mono.Security.dll</HintPath>
+		</Reference>
+		<Reference Include="mscorlib" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\mscorlib.dll</HintPath>
+		</Reference>
+		<Reference Include="Newtonsoft.Json" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Newtonsoft.Json.dll</HintPath>
+		</Reference>
+		<Reference Include="Pathfinding.ClipperLib" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Pathfinding.ClipperLib.dll</HintPath>
+		</Reference>
+		<Reference Include="Pathfinding.Ionic.Zip.Reduced" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+		</Reference>
+		<Reference Include="Pathfinding.Poly2Tri" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Pathfinding.Poly2Tri.dll</HintPath>
+		</Reference>
+		<Reference Include="RadiantGI" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\RadiantGI.dll</HintPath>
+		</Reference>
+		<Reference Include="RootMotion" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\RootMotion.dll</HintPath>
+		</Reference>
+		<Reference Include="RuntimePreviewGenerator.Runtime" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\RuntimePreviewGenerator.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="sc.stylizedgrass.runtime" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\sc.stylizedgrass.runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="sc.stylizedwater2.runtime" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\sc.stylizedwater2.runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="StylizedWaterForURP" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\StylizedWaterForURP.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Configuration" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\System.Configuration.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Core" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\System.Core.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Data" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\System.Data.dll</HintPath>
+		</Reference>
+		<Reference Include="System" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\System.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Drawing" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\System.Drawing.dll</HintPath>
+		</Reference>
+		<Reference Include="System.IO.Compression" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\System.IO.Compression.dll</HintPath>
+		</Reference>
+		<Reference Include="System.IO.Compression.FileSystem" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\System.IO.Compression.FileSystem.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Net.Http" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\System.Net.Http.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Numerics" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\System.Numerics.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Runtime.Serialization" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\System.Runtime.Serialization.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Xml" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\System.Xml.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Xml.Linq" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\System.Xml.Linq.dll</HintPath>
+		</Reference>
+		<Reference Include="VisualDesignCafe.Nature" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\VisualDesignCafe.Nature.dll</HintPath>
+		</Reference>
+		<Reference Include="VisualDesignCafe.Packages" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\VisualDesignCafe.Packages.dll</HintPath>
+		</Reference>
+		<Reference Include="VisualDesignCafe.ShaderX" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\VisualDesignCafe.ShaderX.dll</HintPath>
+		</Reference>
+		<Reference Include="__Generated" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\__Generated.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.AI.Navigation" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Unity.AI.Navigation.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Burst" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Unity.Burst.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Burst.Unsafe" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Unity.Burst.Unsafe.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Collections" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Unity.Collections.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Collections.LowLevel.ILSupport" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.InputSystem" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Unity.InputSystem.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.InputSystem.ForUI" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Unity.InputSystem.ForUI.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.InputSystem.RebindingUI" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Unity.InputSystem.RebindingUI.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Mathematics" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Unity.Mathematics.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Postprocessing.Runtime" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Unity.Postprocessing.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.Core.Runtime" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.Universal.Runtime" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Analytics" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Unity.Services.Analytics.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Configuration" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Unity.Services.Core.Configuration.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Device" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Unity.Services.Core.Device.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Unity.Services.Core.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Environments.Internal" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Unity.Services.Core.Environments.Internal.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Internal" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Unity.Services.Core.Internal.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Registration" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Unity.Services.Core.Registration.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Scheduler" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Unity.Services.Core.Scheduler.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Telemetry" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Unity.Services.Core.Telemetry.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Threading" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Unity.Services.Core.Threading.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.TextMeshPro" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Timeline" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\Unity.Timeline.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AccessibilityModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.AccessibilityModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AIModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.AIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AndroidJNIModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.AndroidJNIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AnimationModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ARModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.ARModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AssetBundleModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AudioModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ClothModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.ClothModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ContentLoadModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.ContentLoadModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CrashReportingModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.CrashReportingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.DirectorModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.DirectorModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.DSPGraphModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.DSPGraphModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.GameCenterModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.GameCenterModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.GIModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.GIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.GridModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.GridModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.HotReloadModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.HotReloadModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ImageConversionModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.IMGUIModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.InputLegacyModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.InputModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.InputModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.JSONSerializeModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.LocalizationModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.LocalizationModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ParticleSystemModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.PerformanceReportingModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.PerformanceReportingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.Physics2DModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.Physics2DModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.PhysicsModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ProfilerModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.ProfilerModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.PropertiesModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.PropertiesModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ScreenCaptureModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.ScreenCaptureModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SharedInternalsModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.SharedInternalsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SpriteMaskModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.SpriteMaskModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SpriteShapeModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.SpriteShapeModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.StreamingModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.StreamingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SubstanceModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.SubstanceModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SubsystemsModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.SubsystemsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TerrainModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.TerrainModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TerrainPhysicsModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TextCoreFontEngineModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TextCoreTextEngineModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TextRenderingModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TilemapModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.TilemapModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TLSModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.TLSModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UI" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.UI.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UIElementsModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.UIElementsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UIModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UmbraModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.UmbraModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityAnalyticsCommonModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityAnalyticsModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityConnectModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.UnityConnectModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityCurlModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.UnityCurlModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityTestProtocolModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestAssetBundleModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestAudioModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestTextureModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestWWWModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VehiclesModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.VehiclesModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VFXModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.VFXModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VideoModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.VideoModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VRModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.VRModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.WindModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.WindModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.XRModule" Private="false">
+			<HintPath>d:\Games\Schedule I\Schedule I_Data\Managed\UnityEngine.XRModule.dll</HintPath>
+		</Reference>
+		<PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.4.2" PrivateAssets="all" />
+		<Reference Include="d:\Games\Schedule I\Schedule I_Data\Managed\Assembly-CSharp.dll" Private="false"  Publicize="true" />
+	</ItemGroup>
+
+	<PropertyGroup>
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="**\*.cs" />
+	</ItemGroup>
+
+	<Target Name="CopyOutputFileToGame" AfterTargets="Build">
+		<Copy SourceFiles="$(OutputPath)\$(AssemblyName).dll" DestinationFolder="d:\Games\Schedule I\Mods" Retries="60" />
+	</Target>
+	<Target Name="CopyOutputFileDist" AfterTargets="Build">
+		<Copy SourceFiles="$(OutputPath)\$(AssemblyName).dll" DestinationFolder="d:\projects\Schedule I\$(AssemblyName)\dist" Retries="60" />
+	</Target>
+</Project>
