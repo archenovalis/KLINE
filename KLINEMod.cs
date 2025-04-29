@@ -1,13 +1,13 @@
 using MelonLoader;
 
-[assembly: MelonInfo(typeof(KLINE.KLINEMod), "KLINE", "1.0.11", "Archie")]
+[assembly: MelonInfo(typeof(KLINE.KLINEMod), "KLINE", "1.0.0", "Archie")]
 [assembly: MelonGame("TVGS", "Schedule I")]
 
 namespace KLINE
 {
   public class KLINEMod : MelonMod
   {
-    public static readonly bool debugLog = true;
+    public static readonly bool debugLog = false;
 
     public override void OnInitializeMelon()
     {
