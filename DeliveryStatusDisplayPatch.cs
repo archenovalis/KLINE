@@ -1,15 +1,15 @@
 using MelonLoader;
 using HarmonyLib;
-using ScheduleOne;
-using ScheduleOne.Delivery;
-using ScheduleOne.ItemFramework;
-using ScheduleOne.UI.Phone.Delivery;
+using Il2CppScheduleOne;
+using Il2CppScheduleOne.Delivery;
+using Il2CppScheduleOne.ItemFramework;
+using Il2CppScheduleOne.UI.Phone.Delivery;
 using UnityEngine;
 using UnityEngine.UI;
 using Object = UnityEngine.Object;
-using ScheduleOne.DevUtilities;
+using Il2CppScheduleOne.DevUtilities;
 
-namespace KLINE
+namespace KLINE_Standard
 {
   [HarmonyPatch(typeof(DeliveryStatusDisplay))]
   public class DeliveryStatusDisplayPatch

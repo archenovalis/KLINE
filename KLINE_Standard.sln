@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KLINE", "KLINE.csproj", "{D8CD6AB9-5BDA-3454-DE26-12A9BB33954E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KLINE_Standard", "KLINE_Standard.csproj", "{7A76B4EB-F132-2F24-AA39-F8EE8FE11D69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,15 +10,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D8CD6AB9-5BDA-3454-DE26-12A9BB33954E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D8CD6AB9-5BDA-3454-DE26-12A9BB33954E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D8CD6AB9-5BDA-3454-DE26-12A9BB33954E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D8CD6AB9-5BDA-3454-DE26-12A9BB33954E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A76B4EB-F132-2F24-AA39-F8EE8FE11D69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A76B4EB-F132-2F24-AA39-F8EE8FE11D69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A76B4EB-F132-2F24-AA39-F8EE8FE11D69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A76B4EB-F132-2F24-AA39-F8EE8FE11D69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {23202DF0-626B-4F31-A24F-08D500E0923A}
+		SolutionGuid = {FCED2BF1-5253-46BD-B9FC-5F5432586600}
 	EndGlobalSection
 EndGlobal

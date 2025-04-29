@@ -1,15 +1,18 @@
 using MelonLoader;
 using HarmonyLib;
-using ScheduleOne;
-using ScheduleOne.Delivery;
-using ScheduleOne.ItemFramework;
-using ScheduleOne.Money;
-using ScheduleOne.UI.Phone.Delivery;
+using Il2CppScheduleOne;
+using Il2CppScheduleOne.Delivery;
+using Il2CppScheduleOne.ItemFramework;
+using Il2CppScheduleOne.Money;
+using Il2CppScheduleOne.UI.Phone.Delivery;
 using UnityEngine;
-using ScheduleOne.DevUtilities;
+using Il2CppScheduleOne.DevUtilities;
 using Unity.Mathematics;
 
-namespace KLINE
+using static KLINE_Standard.KLINEUtilities;
+using Il2Cpp;
+
+namespace KLINE_Standard
 {
   [HarmonyPatch(typeof(DeliveryShop))]
   public class DeliveryShopPatch
@@ -94,7 +97,7 @@ namespace KLINE
     public static bool GetOrderTotalPrefix(DeliveryShop __instance, ref float __result)
     {
       float cartCost = __instance.GetCartCost();
-      int vehicleCount = CalculateVehicleCount(__instance.listingEntries);
+      int vehicleCount = CalculateVehicleCount(KLINEUtilities.ConvertList(__instance.listingEntries));
       __result = cartCost + __instance.DeliveryFee * vehicleCount;
       return false;
     }
@@ -111,7 +114,7 @@ namespace KLINE
       }
 
       float orderTotal = __instance.GetOrderTotal();
-      List<StringIntPair> orderItems = __instance.listingEntries
+      List<StringIntPair> orderItems = ConvertList(__instance.listingEntries)
           .Where(le => le.SelectedQuantity > 0)
           .Select(le => new StringIntPair(le.MatchingListing.Item.ID, le.SelectedQuantity))
           .ToList();
@@ -151,7 +154,7 @@ namespace KLINE
     {
       __instance.ItemTotalLabel.text = MoneyManager.FormatAmount(__instance.GetCartCost(), false, false);
       __instance.OrderTotalLabel.text = MoneyManager.FormatAmount(__instance.GetOrderTotal(), false, false);
-      int vehicleCount = CalculateVehicleCount(__instance.listingEntries);
+      int vehicleCount = CalculateVehicleCount(ConvertList(__instance.listingEntries));
       float deliveryFeeTotal = __instance.DeliveryFee * vehicleCount;
       __instance.DeliveryFeeLabel.text = MoneyManager.FormatAmount(deliveryFeeTotal, false, false);
       return false;
